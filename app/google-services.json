@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "306084262565",
+    "firebase_url": "https://thesparksfoundation-53752.firebaseio.com",
+    "project_id": "thesparksfoundation-53752",
+    "storage_bucket": "thesparksfoundation-53752.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306084262565:android:654889797c52b0fd27534c",
+        "android_client_info": {
+          "package_name": "com.example.thesparksfoundation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "306084262565-fue0ob1o71cmqio93rqvbigtp6n4nh4u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.thesparksfoundation",
+            "certificate_hash": "42aed1583fa302e2282b0840f0025159722f0d19"
+          }
+        },
+        {
+          "client_id": "306084262565-u1no3ko0k989mim3i1tj2eruq6en76jm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGIDug5HMyqDlnaEjzF9_hXVtLwsjotGw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "306084262565-u1no3ko0k989mim3i1tj2eruq6en76jm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerInParent="true"
+    tools:context=".MainActivity"
+    android:background="@drawable/backgroundimage">
+
+
+<!--<ImageView-->
+<!--    android:layout_width="100dp"-->
+<!--    android:layout_height="100dp"-->
+<!--    android:id="@+id/profile_image"-->
+<!--    android:src="@drawable/profile"-->
+<!--    android:layout_centerHorizontal="true"-->
+<!--    android:layout_marginTop="50dp"-->
+
+<!--    />-->
+
+
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="name!"-->
+<!--        android:textColor="#ffffff"-->
+<!--        android:id="@+id/name"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_below="@id/profile_image"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        />-->
+
+
+
+
+
+
+
+
+<!--    <com.facebook.login.widget.LoginButton-->
+<!--        android:id="@+id/btnlogin"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_below="@id/name"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#91ff35"
+        android:id="@+id/frame1"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+            android:text="WELCOME TO SOCIAL WORLD"
+            android:fontFamily="casual"
+            android:textFontWeight="100"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="#ff3d00"
+        android:layout_below="@+id/frame1"
+        android:id="@+id/frame2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:id="@+id/profile_image"
+            android:src="@drawable/profile"
+            android:layout_centerInParent="true"
+            android:cropToPadding="true"
+            />
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#ffcd38"
+        android:layout_below="@+id/frame2"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/frame3"
+        android:visibility="invisible"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="name!"
+                android:textColor="#000000"
+                android:textAllCaps="true"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="email"-->
+<!--                android:textAllCaps="true"-->
+<!--                android:fontFamily="sans-serif-condensed-medium"-->
+<!--                android:textStyle="italic"-->
+<!--                android:layout_below="@id/name"-->
+<!--                android:id="@+id/email"-->
+<!--                android:layout_centerInParent="true"/>-->
+
+
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/frame4"
+        android:layout_below="@id/frame3"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+        <com.google.android.gms.common.SignInButton
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+            android:id="@+id/Gsign_in"
+            android:layout_marginTop="20dp"
+            />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Sign Out"
+            android:textStyle="bold"
+            android:background="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible"
+            android:id="@+id/Gsign_out"/>
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/btnlogin"
+                android:layout_width="214dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                tools:ignore="MissingConstraints"
+                android:layout_below="@id/Gsign_out"/>
+
+
+
+        </RelativeLayout>
+    </FrameLayout>
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            >-->
+<!--        <com.facebook.login.widget.LoginButton-->
+<!--            android:id="@+id/btnlogin"-->
+<!--            android:layout_width="214dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginBottom="30dp"-->
+<!--            tools:ignore="MissingConstraints" />-->
+
+
+<!--        </RelativeLayout>-->
+
+
+<!--    <FrameLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:background="#ff3d00"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:id="@+id/frame6"-->
+
+<!--        android:layout_below="@id/frame5"-->
+<!--        />-->
+<!--    <FrameLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="#ffeb3b"-->
+<!--        android:id="@+id/frame7"-->
+<!--        android:layout_below="@id/frame6"-->
+<!--        />-->
+
+
+
+
+</RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
